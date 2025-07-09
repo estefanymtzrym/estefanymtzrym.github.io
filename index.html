@@ -13,13 +13,13 @@
     <header>
         <img src="logo.jpg" alt="Logo del negocio" class="logo">
 
-      <h1>ESTEFANY MARTINEZ</h1>
+      <h1>ESTEFANY MARTINEZ</h1>  
       <p>ROPA Y MAS</p>
     </header>
 
     <section class="facebook">
         <h2>Síguenos en Facebook</h2>
-        <a href="https://www.facebook.com/estefany.coro.73" 
+        <a href="https://www.facebook.com/TuPagina" 
            target="_blank" 
            class="facebook-btn">
           ESTEFANY MARTINEZ
@@ -35,15 +35,22 @@
       <p>C. Julio A. Roca 1332, Croc, 64200 Monterrey, N.L.</p>
     </section>
     <section class="ubicacion">
-        <h2>Ubicación en el mapa</h2>
-        <a href="https://maps.app.goo.gl/DNfeb86pT1cBMBSg7" 
-           target="_blank" 
-           class="mapa-link">
-          Ver en Google Maps
-        </a>
-      </section>
+  <h2>Ubicación en el mapa</h2>
+  <a href="https://maps.app.goo.gl/DNfeb86pT1cBMBSg7" 
+     target="_blank" 
+     class="mapa-btn">
+    📍 Ver en Google Maps
+  </a>
+</section>
 
+  <section class="horarios">
+  <h2>Horarios de atención</h2>
+  <ul>
+    <li><strong>Lunes a Sabado:</strong> 12:00 PM - 7:00 PM</li>
   
+    <li><strong>Domingo:</strong> 11:30 AM - 5:00 PM</li>
+  </ul>
+</section> 
     <footer>
       <p>&copy; 2025 ESTEFANY MARTINEZ. Todos los derechos reservados.</p>
     </footer>
@@ -144,5 +151,47 @@
   .facebook-btn:hover {
     background-color: #0e60c4;
   }
-  
+  .horarios {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.horarios h2 {
+  color: #004080;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.horarios ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.horarios li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.mapa-btn {
+  display: inline-block;
+  background-color: #EA4335; /* Rojo Google Maps */
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-btn:hover {
+  background-color: #cc372d;
+  transform: scale(1.03);
+}
+
 </style>
