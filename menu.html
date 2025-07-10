@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Negocio de Ropa - Historia, Misión y Visión</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="#" data-section="inicio">Inicio</a></li>
+      <li><a href="#" data-section="historia">Historia</a></li>
+      <li><a href="#" data-section="mision">Misión</a></li>
+      <li><a href="#" data-section="vision">Visión</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <section id="inicio" class="section active">
+      <h1>Bienvenido a Mi Negocio de Ropa</h1>
+      <p>Explora las secciones de nuestra empresa usando el menú hamburguesa ☰</p>
+        <a href="index.html" class="btn-regresar">← Regresar al inicio</a>
+    </section>
+
+    <section id="historia" class="section">
+      <button class="btn-regresar" data-section="inicio">← Regresar</button>
+      <h1>Historia de la empresa</h1>
+      <p>
+        Iniciamos en 2018 como un pequeño negocio familiar en Monterrey, con la ilusión de ofrecer ropa de calidad a precios accesibles. A lo largo de los años, hemos crecido gracias a la confianza de nuestros clientes y el compromiso con la moda responsable.
+      </p>
+    </section>
+
+    <section id="mision" class="section">
+      <button class="btn-regresar" data-section="inicio">← Regresar</button>
+      <h1>Misión</h1>
+      <p>
+        Ofrecer productos de alta calidad con atención personalizada, asegurando la satisfacción total de nuestros clientes, siempre con precios justos y una experiencia de compra amigable.
+      </p>
+    </section>
+
+    <section id="vision" class="section">
+      <button class="btn-regresar" data-section="inicio">← Regresar</button>
+      <h1>Visión</h1>
+      <p>
+        Ser una marca reconocida a nivel regional por nuestra innovación, calidad y compromiso con la moda accesible y sostenible, contribuyendo al bienestar de nuestra comunidad.
+      </p>
+    </section>
+  
+
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+    const links = menu.querySelectorAll('a');
+    const sections = document.querySelectorAll('.section');
+    const btnRegresar = document.querySelectorAll('.btn-regresar');
+
+    // Abrir/cerrar menú hamburguesa
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    // Mostrar sección al seleccionar en menú
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = link.getAttribute('data-section');
+
+        // Ocultar todas
+        sections.forEach(s => s.classList.remove('active'));
+
+        // Mostrar la que corresponde
+        const section = document.getElementById(target);
+        if (section) section.classList.add('active');
+
+        // Cerrar menú
+        menu.classList.remove('active');
+      });
+    });
+
+    // Botones regresar
+    btnRegresar.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Ocultar todas
+        sections.forEach(s => s.classList.remove('active'));
+        // Mostrar inicio
+        document.getElementById('inicio').classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
