@@ -142,3 +142,12 @@ background: #ad1457;
 .map-container {
   box-shadow: 0 0 10px rgba(194, 24, 91, 0.15);
 }
+
+.facebook-post-container iframe {
+  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 9 / 16; /* Ajusta según el tipo de contenido */
+  border: none;
+  overflow: hidden;
+}
