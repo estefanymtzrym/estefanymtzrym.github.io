@@ -3,98 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Negocio de Ropa - Historia, Misión y Visión</title>
+  <title>Menú - Estefany Martínez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
-
   <nav class="navbar">
-    <img src="img/logo.png" alt="Logo" class="logo" />
+    <img src="img/logo.jpg" alt="Logotipo" class="logo" />
     <div class="menu-icon" id="menuToggle">☰</div>
     <ul class="menu" id="menu">
-      <li><a href="#" data-section="inicio">Inicio</a></li>
-      <li><a href="#" data-section="historia">Historia</a></li>
-      <li><a href="#" data-section="mision">Misión</a></li>
-      <li><a href="#" data-section="vision">Visión</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="mision-vision-valores.html">Misión y Visión</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
     </ul>
   </nav>
 
-  <div class="content">
-    <section id="inicio" class="section active">
-      <h1>Bienvenido a Mi Negocio de Ropa</h1>
-      <p>Explora las secciones de nuestra empresa usando el menú hamburguesa ☰</p>
-        <a href="index.html" class="btn-regresar">← Regresar al inicio</a>
-    </section>
-
-    <section id="historia" class="section">
-     
-      <h1>Historia de la empresa</h1>
-      <p>
-        
-      </p>
-    </section>
-
-    <section id="mision" class="section">
-      
-      <h1>Misión</h1>
-      <p>
-        Ofrecer productos de alta calidad con atención personalizada, asegurando la satisfacción total de nuestros clientes, siempre con precios justos y una experiencia de compra amigable.
-      </p>
-    </section>
-
-    <section id="vision" class="section">
-      
-      <h1>Visión</h1>
-      <p>
-        er reconocidos como la tienda de referencia en la colonia para ropa moderna y accesible, destacándonos por la calidad de nuestros productos y la excelente atención al cliente, creciendo continuamente para ofrecer moda actualizada que empodere a nuestra comunidad y fomente su estilo personal.
-      </p>
-    </section>
-  
-
-  </div>
+  <main class="content">
+    <h1>Menú de Opciones</h1>
+    <p>Aquí puedes añadir la descripción o secciones que quieras mostrar en el menú.</p>
+    <a href="index.html" class="btn-regresar">← Volver al inicio</a>
+  </main>
 
   <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const menu = document.getElementById('menu');
-    const links = menu.querySelectorAll('a');
-    const sections = document.querySelectorAll('.section');
-    const btnRegresar = document.querySelectorAll('.btn-regresar');
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
 
-    // Abrir/cerrar menú hamburguesa
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-
-    // Mostrar sección al seleccionar en menú
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = link.getAttribute('data-section');
-
-        // Ocultar todas
-        sections.forEach(s => s.classList.remove('active'));
-
-        // Mostrar la que corresponde
-        const section = document.getElementById(target);
-        if (section) section.classList.add('active');
-
-        // Cerrar menú
-        menu.classList.remove('active');
-      });
-    });
-
-    // Botones regresar
-    btnRegresar.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Ocultar todas
-        sections.forEach(s => s.classList.remove('active'));
-        // Mostrar inicio
-        document.getElementById('inicio').classList.add('active');
-      });
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
     });
   </script>
-
 </body>
 </html>
-
+  
