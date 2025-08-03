@@ -2,58 +2,57 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Estefany Martínez - Moda Accesible</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar">
-    <img src="img/logo.jpg" alt="Logotipo" class="logo" />
-    <div class="menu-icon" id="menuToggle">☰</div>
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="menu.html">Menú</a></li>
-      <li><a href="vision.html">Misión y Visión</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
-    </ul>
-  </nav>
+  <header class="navbar">
+    <img src="img/logo.jpg" alt="Logotipo Estefany Martínez" class="logo">
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    <nav class="menu" id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="vision.html">Misión y Visión</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    </nav>
+  </header>
 
   <main class="content">
-    <section>
+    <section id="inicio" class="intro">
       <h1>Estefany Martínez</h1>
-      <p>Moda accesible y personalizada para ti</p>
+      <p>Moda accesible, elegante y con estilo para ti.</p>
     </section>
 
-    <section id="galeria">
+    <section id="galeria" class="galeria">
       <h2>Galería de Productos</h2>
       <div class="gallery">
-        <div class="gallery-item"><img src="productos/p3.jpg" alt="Producto 1" loading="lazy"></div>
-        <div class="gallery-item"><img src="productos/p1.jpg" alt="Producto 2" loading="lazy"></div>
-        <div class="gallery-item"><img src="productos/p2.jpg" alt="Producto 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="productos/p1.jpg" alt="Producto 1"></div>
+        <div class="gallery-item"><img src="productos/p2.jpg" alt="Producto 2"></div>
+        <div class="gallery-item"><img src="productos/p3.jpg" alt="Producto 3"></div>
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="contacto">
       <h2>Contáctanos</h2>
       <p><strong>Dirección:</strong> C. Julio A. Roca 1332, Croc, 64200 Monterrey, N.L.</p>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.8213639279636!2d-100.33724892466234!3d25.720779477360287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdb15a0a8d85%3A0xb7d99f47393d0633!2sC.%20Julio%20A.%20Roca%201332%2C%20Croc%2C%2064200%20Monterrey%2C%20N.L.!5e0!3m2!1ses!2smx!4v1720612345678!5m2!1ses!2smx"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.8213639279636!2d-100.33724892466234!3d25.720779477360287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdb15a0a8d85%3A0xb7d99f47393d0633!2sC.%20Julio%20A.%20Roca%201332%2C%20Croc%2C%2064200%20Monterrey%2C%20N.L.!5e0!3m2!1ses!2smx!4v1720612345678!5m2!1ses!2smx"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="social-icons">
-        <a href="https://www.facebook.com/estefany.coro.73" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://wa.me/528128669312" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-        <a href="https://www.instagram.com/este.fany_martinez" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/estefany.coro.73" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/528128669312" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/este.fany_martinez" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </section>
-
-    <section>
+  </main>
+ <section>
       <h2>Publicaciones Recientes</h2>
       <div class="facebook-post-container">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Festefany.coro.73%2Fposts%2Fpfbid0qWCnAG5GS5eppmEbBiwb4tw4gG4sp4874kCSm4Zdvh9em6r46Qi4gwfm8UgGmHP7l&show_text=true&width=500"
@@ -62,14 +61,12 @@
         </iframe>
       </div>
     </section>
-  </main>
-
   <script>
-    const menuToggle = document.getElementById("menuToggle");
+    const toggle = document.getElementById("menuToggle");
     const menu = document.getElementById("menu");
 
-    menuToggle.addEventListener("click", () => {
-      menu.classList.toggle("active");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("show");
     });
   </script>
 
