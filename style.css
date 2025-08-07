@@ -119,6 +119,27 @@ body {
   color: #ad1457;
 }
 
+/* Publicaciones recientes - Facebook embed */
+.facebook-post-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fb-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1.2;
+}
+
+.fb-responsive iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 /* === Responsive === */
 @media screen and (max-width: 768px) {
   .menu-toggle {
@@ -144,26 +165,6 @@ body {
     padding: 12px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
   }
-  .facebook-post-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.fb-responsive {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 1 / 1.2; /* Relación de aspecto adaptable */
-}
-
-.fb-responsive iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 
   .gallery {
     flex-direction: column;
@@ -182,4 +183,23 @@ body {
   .intro p {
     text-align: center;
   }
+}
+.footer {
+  text-align: center;
+  background-color: #f8eaf0;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+.footer a {
+  color: #c2185b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
